@@ -15,7 +15,7 @@ const studentCourseProgressRoutes = require("./routes/student-routes/course-prog
 const app = express();
 const PORT = 5000;
 const DB_NAME = "my_database"; // Replace with your desired database name
-const MONGO_URI = `mongodb+srv://yasir2002:yasir2002@cluster0.vgcb7fd.mongodb.net/${DB_NAME}?retryWrites=true&w=majority&appName=Cluster0`;
+const MONGO_URI = `http://localhost:27017/${DB_NAME}`;
 
 app.use(
   cors({
